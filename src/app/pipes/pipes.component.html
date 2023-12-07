@@ -1,0 +1,15 @@
+<p>pipes works!</p>
+
+<p>My birthday is on {{birthday | date: "shortDate"}}</p>
+<p> My birthday is on {{birthday | date |uppercase}}</p>
+<p>My birthday is on {{birthday | date | lowercase}}</p>
+<p>My birthday is on {{birthday | date:'fullDate' | uppercase}}</p>
+<!-- <p>{{ currencyValue | currency:'EUR' }}</p> -->
+<p>{{channel.currency | currency: 'INR' }}</p>
+<p>{{channel.currency | currency: 'INR' :'code' }}</p>
+
+<!-- no of digits before the decimal point and after the decimal point -->
+<p>{{channel.decimalNumber | currency:'INR':"symbol" : '5.1-2' }}</p>
+<p>{{30007 | number}}</p>
+<p>{{379900|number:'2.3'}}</p>
+<p>{{1|percent}}</p>
